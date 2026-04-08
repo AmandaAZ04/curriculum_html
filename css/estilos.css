@@ -63,7 +63,7 @@ body {
 /* DERECHA */
 #principal_derecha {
     width: 65%;
-    padding: 25px;
+    padding: 40px; /* MÁS RELLENO */
 }
 
 /* PIE */
@@ -76,15 +76,29 @@ body {
 }
 
 /* TÍTULOS */
-h1, h2 {
+h1 {
     font-weight: 800;
     color: #b56576;
+}
+
+h2 {
+    font-weight: 800;
+    color: #b56576;
+    font-size: 24px; /* MÁS GRANDE */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e5989b;
+    padding-bottom: 5px;
 }
 
 /* TEXTO */
 p, li {
     font-weight: 600;
     margin: 8px 0;
+}
+
+#principal_derecha p {
+    font-size: 17px;
+    line-height: 1.5;
 }
 
 /* LISTAS */
@@ -113,9 +127,10 @@ a:hover {
     width: 100%;
     background-color: #ffccd5;
     border: none;
-    padding: 10px;
+    padding: 15px;
     font-weight: 800;
     font-family: 'Dosis', sans-serif;
+    font-size: 20px; /* MÁS GRANDE */
     text-align: left;
     cursor: pointer;
     border-radius: 8px;
@@ -144,5 +159,5 @@ a:hover {
 }
 
 .flecha {
-    font-size: 14px;
+    font-size: 18px; /* MÁS GRANDE */
 }
