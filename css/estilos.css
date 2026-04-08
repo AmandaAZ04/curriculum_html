@@ -42,12 +42,13 @@ body {
 
 /* PRESENTACIÓN */
 .presentacion {
-    font-size: 19px;
+    font-size: 18px;
 }
 
 /* CONTENIDO */
 #contenedor_principal {
     display: flex;
+    align-items: stretch; /* 🔥 IGUALA ALTURA */
     min-height: 500px;
 }
 
@@ -62,7 +63,7 @@ body {
 /* DERECHA */
 #principal_derecha {
     width: 65%;
-    padding: 60px;
+    padding: 30px; /* 🔥 REDUCIDO */
 }
 
 /* PIE */
@@ -83,11 +84,11 @@ h1 {
 h2 {
     font-weight: 800;
     color: #b56576;
-    font-size: 28px;
+    font-size: 24px; /* 🔥 MÁS EQUILIBRADO */
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border-bottom: 2px solid #e5989b;
-    padding-bottom: 8px;
+    padding-bottom: 5px;
 }
 
 /* TEXTO */
@@ -96,18 +97,18 @@ p, li {
 }
 
 #principal_derecha p {
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 17px;
+    line-height: 1.5;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     background-color: #fff0f3;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
 }
 
-/* DESTACAR NOMBRE */
+/* DESTACAR */
 #principal_derecha strong {
-    font-size: 20px;
+    font-size: 19px;
     display: block;
 }
 
