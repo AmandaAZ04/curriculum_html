@@ -48,7 +48,7 @@ body {
 /* CONTENIDO */
 #contenedor_principal {
     display: flex;
-    align-items: stretch; /* 🔥 IGUALA ALTURA */
+    align-items: stretch;
     min-height: 500px;
 }
 
@@ -63,7 +63,7 @@ body {
 /* DERECHA */
 #principal_derecha {
     width: 65%;
-    padding: 30px; /* 🔥 REDUCIDO */
+    padding: 30px;
 }
 
 /* PIE */
@@ -84,7 +84,7 @@ h1 {
 h2 {
     font-weight: 800;
     color: #b56576;
-    font-size: 24px; /* 🔥 MÁS EQUILIBRADO */
+    font-size: 24px;
     text-align: center;
     margin-bottom: 10px;
     border-bottom: 2px solid #e5989b;
