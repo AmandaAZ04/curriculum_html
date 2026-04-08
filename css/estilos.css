@@ -4,72 +4,87 @@ body {
     margin: 0;
 }
 
-/* Contenedor centrado */
+/* CONTENEDOR */
 #pagina_completa {
-    width: 80%;
-    margin: auto;
+    width: 95%;
+    max-width: 1400px;
+    margin: 20px auto;
 }
 
-/* Secciones */
+/* SECCIONES */
 .banner_superior {
-    border: 2px solid #e5989b;
-    display: inline-flex;
+    display: flex;
     width: 100%;
-    background-color: #ffffff;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #e5989b;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Imagen */
+/* ENCABEZADO */
+#superior_izquierdo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #imagen_superior {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid #e5989b;
+    width: 280px;
+    height: 280px;
+    margin: 5px;
+    border: none; /* ❌ elimina borde rosado */
+    border-radius: 5px; /* 🔥 esquinas suaves (opcional) */
+    object-fit: cover;
 }
 
-/* Texto lado derecho arriba */
 #superior_derecho {
-    padding-left: 20px;
+    padding: 20px;
 }
 
-/* Columnas */
+/* CONTENIDO PRINCIPAL */
+#contenedor_principal {
+    display: flex;
+    min-height: 500px; /* 🔥 hace el bloque más grande */
+}
+
+/* IZQUIERDA */
 #principal_izquierda {
     width: 35%;
-    padding: 15px;
+    padding: 25px;
     background-color: #fff0f3;
     border-right: 2px solid #e5989b;
 }
 
+/* DERECHA */
 #principal_derecha {
     width: 65%;
-    padding: 15px;
-    background-color: #ffffff;
+    padding: 25px;
 }
 
-/* Pie */
+/* PIE */
 #pie_pagina {
-    display: inline-flex;
+    display: flex;
+    justify-content: space-around;
     background-color: #ffccd5;
-}
-
-.div_pie_pagina {
-    margin: auto;
+    border-radius: 15px;
     padding: 10px;
 }
 
-/* Títulos */
+/* TEXTO */
 h1 {
     color: #b56576;
-    margin-bottom: 5px;
 }
 
 h2 {
     color: #e5989b;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
-/* Listas */
+p {
+    margin: 8px 0;
+}
+
 ul {
     padding-left: 20px;
 }
