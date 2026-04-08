@@ -33,7 +33,6 @@ body {
 #imagen_superior {
     width: 210px;
     height: 210px;
-    margin: 5px;
     object-fit: cover;
 }
 
@@ -63,7 +62,7 @@ body {
 /* DERECHA */
 #principal_derecha {
     width: 65%;
-    padding: 40px; /* MÁS RELLENO */
+    padding: 60px;
 }
 
 /* PIE */
@@ -84,21 +83,32 @@ h1 {
 h2 {
     font-weight: 800;
     color: #b56576;
-    font-size: 24px; /* MÁS GRANDE */
-    margin-bottom: 10px;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
     border-bottom: 2px solid #e5989b;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
 }
 
 /* TEXTO */
 p, li {
     font-weight: 600;
-    margin: 8px 0;
 }
 
 #principal_derecha p {
-    font-size: 17px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #fff0f3;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* DESTACAR NOMBRE */
+#principal_derecha strong {
+    font-size: 20px;
+    display: block;
 }
 
 /* LISTAS */
@@ -130,13 +140,11 @@ a:hover {
     padding: 15px;
     font-weight: 800;
     font-family: 'Dosis', sans-serif;
-    font-size: 20px; /* MÁS GRANDE */
-    text-align: left;
+    font-size: 20px;
     cursor: pointer;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .acordeon_btn:hover {
@@ -159,5 +167,5 @@ a:hover {
 }
 
 .flecha {
-    font-size: 18px; /* MÁS GRANDE */
+    font-size: 18px;
 }
