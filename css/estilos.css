@@ -91,3 +91,58 @@ p, li {
 ul {
     padding-left: 20px;
 }
+
+/* LINKS */
+a {
+    text-decoration: none;
+    color: #b56576;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #e5989b;
+}
+
+/* ACORDEÓN */
+.acordeon {
+    margin-bottom: 15px;
+}
+
+.acordeon_btn {
+    width: 100%;
+    background-color: #ffccd5;
+    border: none;
+    padding: 10px;
+    font-weight: 800;
+    font-family: 'Dosis', sans-serif;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.acordeon_btn:hover {
+    background-color: #e5989b;
+    color: white;
+}
+
+.acordeon_contenido {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #fff0f3;
+    border-radius: 8px;
+    margin-top: 5px;
+    padding: 0 10px;
+}
+
+.acordeon_contenido.activo {
+    padding: 10px;
+}
+
+.flecha {
+    font-size: 14px;
+}

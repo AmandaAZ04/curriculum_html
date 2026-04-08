@@ -42,40 +42,72 @@
         <!-- IZQUIERDA -->
         <div id="principal_izquierda">
 
-            <h2>Habilidades Blandas</h2>
-            <ul>
-                <li>Creatividad y diseño</li>
-                <li>Trabajo en equipo</li>
-                <li>Resolución de problemas</li>
-                <li>Adaptabilidad</li>
-                <li>Respeto y empatía</li>
-            </ul>
+            <!-- HABILIDADES -->
+            <div class="acordeon">
+                <button class="acordeon_btn">Habilidades Blandas <span class="flecha">▲</span></button>
+                <div class="acordeon_contenido">
+                    <ul>
+                        <li>Creatividad y diseño</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Resolución de problemas</li>
+                        <li>Adaptabilidad</li>
+                        <li>Respeto y empatía</li>
+                    </ul>
+                </div>
+            </div>
 
-            <h2>Cursos</h2>
-            <ul>
-                <li>Foundations of Cybersecurity</li>
-                <li>Manage Security Risks</li>
-                <li>Networks and Security</li>
-                <li>Linux y SQL</li>
-                <li>Threats and Vulnerabilities</li>
-                <li>Detection and Response</li>
-                <li>Python en Cybersecurity</li>
-                <li>Preparación laboral</li>
-            </ul>
+            <!-- CURSOS -->
+            <div class="acordeon">
+                <button class="acordeon_btn">Cursos <span class="flecha">▲</span></button>
+                <div class="acordeon_contenido">
+                    <ul>
+                        <li>Foundations of Cybersecurity</li>
+                        <li>Manage Security Risks</li>
+                        <li>Networks and Security</li>
+                        <li>Linux y SQL</li>
+                        <li>Threats and Vulnerabilities</li>
+                        <li>Detection and Response</li>
+                        <li>Python en Cybersecurity</li>
+                        <li>Preparación laboral</li>
+                    </ul>
+                </div>
+            </div>
 
-            <h2>Certificados</h2>
-            <ul>
-                <li>Google Cybersecurity (2024)</li>
-                <li>Coreano A1 (2023)</li>
-                <li>Desarrollo de Aplicaciones (2025)</li>
-            </ul>
+            <!-- CERTIFICADOS -->
+            <div class="acordeon">
+                <button class="acordeon_btn">Certificados <span class="flecha">▲</span></button>
+                <div class="acordeon_contenido">
+                    <ul>
+                        <li>
+                            <a href="assets/certificados/google.pdf" target="_blank">
+                                📄 Google Cybersecurity (2024)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/certificados/coreano.pdf" target="_blank">
+                                📄 Coreano A1 (2023)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/certificados/desarrollo.pdf" target="_blank">
+                                📄 Desarrollo de Aplicaciones (2025)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-            <h2>Idiomas</h2>
-            <ul>
-                <li>Español: Nativo</li>
-                <li>Inglés: Básico</li>
-                <li>Coreano: Básico</li>
-            </ul>
+            <!-- IDIOMAS -->
+            <div class="acordeon">
+                <button class="acordeon_btn">Idiomas <span class="flecha">▲</span></button>
+                <div class="acordeon_contenido">
+                    <ul>
+                        <li>Español: Nativo</li>
+                        <li>Inglés: Básico</li>
+                        <li>Coreano: Básico</li>
+                    </ul>
+                </div>
+            </div>
 
         </div>
 
@@ -107,6 +139,28 @@
     </div>
 
 </div>
+
+<!-- SCRIPT ACORDEÓN -->
+<script>
+    const botones = document.querySelectorAll(".acordeon_btn");
+
+    botones.forEach(boton => {
+        boton.addEventListener("click", () => {
+            const contenido = boton.nextElementSibling;
+            const flecha = boton.querySelector(".flecha");
+
+            if (contenido.style.maxHeight) {
+                contenido.style.maxHeight = null;
+                contenido.classList.remove("activo");
+                flecha.textContent = "▲";
+            } else {
+                contenido.style.maxHeight = contenido.scrollHeight + "px";
+                contenido.classList.add("activo");
+                flecha.textContent = "▼";
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
