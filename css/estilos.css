@@ -1,6 +1,6 @@
 body {
     background-color: #fde2e4;
-    font-family: Arial, sans-serif;
+    font-family: "Dosis ExtraBold"; /* 🔥 AQUÍ */
     margin: 0;
 }
 
@@ -27,25 +27,25 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
 }
 
 #imagen_superior {
-    width: 280px;
-    height: 280px;
+    width: 210px;
+    height: 210px;
     margin: 5px;
-    border: none; /* ❌ elimina borde rosado */
-    border-radius: 5px; /* 🔥 esquinas suaves (opcional) */
     object-fit: cover;
 }
 
+/* TEXTO ENCABEZADO */
 #superior_derecho {
     padding: 20px;
 }
 
-/* CONTENIDO PRINCIPAL */
+/* CONTENIDO */
 #contenedor_principal {
     display: flex;
-    min-height: 500px; /* 🔥 hace el bloque más grande */
+    min-height: 500px;
 }
 
 /* IZQUIERDA */
