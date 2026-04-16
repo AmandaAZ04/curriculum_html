@@ -8,22 +8,18 @@
 
     <!-- FUENTE -->
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
     <div id="pagina_completa">
-
         <!-- ENCABEZADO -->
         <header class="banner_superior" aria-label="Encabezado del currículum">
             <div id="superior_izquierdo">
                 <img id="imagen_superior" src="assets/img/perfil.jpeg" alt="Foto de perfil de Amanda Angélica Álvarez Álvarez">
             </div>
-
             <div id="superior_derecho">
                 <h1>AMANDA ANGÉLICA ÁLVAREZ ÁLVAREZ</h1>
-
                 <p class="presentacion">
                     Estudiante de Ingeniería en Ciberseguridad en INACAP Temuco (2° año),
                     con orientación a la seguridad informática y desarrollo de soluciones tecnológicas.
@@ -171,6 +167,7 @@
             <div class="div_pie_pagina">📞 <a href="tel:+56930665381">+56 9 3066 5381</a></div>
             <div class="div_pie_pagina">📧 <a href="mailto:amanda.alvarez02@inacapmail.cl">amanda.alvarez02@inacapmail.cl</a></div>
             <div class="div_pie_pagina">💻 <a href="https://github.com/AmandaAZ04" target="_blank" rel="noopener noreferrer">github.com/AmandaAZ04</a></div>
+            <div class="div_pie_pagina">📸 <a href="https://instagram.com/amanda_az_04" target="_blank" rel="noopener noreferrer">@amanda_az_04</a></div>
         </footer>
 
     </div>
@@ -183,6 +180,7 @@
                 const contenido = boton.nextElementSibling;
                 const flecha = boton.querySelector(".flecha");
                 const expandido = boton.getAttribute("aria-expanded") === "true";
+
                 boton.setAttribute("aria-expanded", String(!expandido));
 
                 if (expandido) {
