@@ -45,6 +45,30 @@
                         class="acordeon_btn"
                         type="button"
                         aria-expanded="false"
+                        aria-controls="panel-tecnologias"
+                        id="btn-tecnologias"
+                    >
+                        Tecnologías <span class="flecha" aria-hidden="true">▲</span>
+                    </button>
+                    <div class="acordeon_contenido" id="panel-tecnologias" role="region" aria-labelledby="btn-tecnologias" hidden>
+                        <ul>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>NoSQL</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>MongoDB</li>
+                            <li>Git y GitHub</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="acordeon">
+                    <button
+                        class="acordeon_btn"
+                        type="button"
+                        aria-expanded="false"
                         aria-controls="panel-habilidades"
                         id="btn-habilidades"
                     >
@@ -159,7 +183,6 @@
                 const contenido = boton.nextElementSibling;
                 const flecha = boton.querySelector(".flecha");
                 const expandido = boton.getAttribute("aria-expanded") === "true";
-
                 boton.setAttribute("aria-expanded", String(!expandido));
 
                 if (expandido) {
