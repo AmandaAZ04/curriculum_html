@@ -183,7 +183,7 @@ a:hover {
     font-size: 18px;
 }
 
-/* RESPONSIVE */
+/* Responsive para que se adapte la pantalla */
 @media (max-width: 900px) {
     .banner_superior {
         flex-direction: column;
