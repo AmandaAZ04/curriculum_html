@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículum Vitae</title>
 
     <!-- FUENTE -->
@@ -12,137 +13,168 @@
 </head>
 
 <body>
+    <div id="pagina_completa">
 
-<div id="pagina_completa">
+        <!-- ENCABEZADO -->
+        <header class="banner_superior" aria-label="Encabezado del currículum">
+            <div id="superior_izquierdo">
+                <img id="imagen_superior" src="assets/img/perfil.jpeg" alt="Foto de perfil de Amanda Angélica Álvarez Álvarez">
+            </div>
 
-    <!-- ENCABEZADO -->
-    <div class="banner_superior">
+            <div id="superior_derecho">
+                <h1>AMANDA ANGÉLICA ÁLVAREZ ÁLVAREZ</h1>
 
-        <div id="superior_izquierdo">
-            <img id="imagen_superior" src="assets/img/perfil.jpeg" alt="foto">
-        </div>
+                <p class="presentacion">
+                    Estudiante de Ingeniería en Ciberseguridad en INACAP Temuco (2° año),
+                    con orientación a la seguridad informática y desarrollo de soluciones tecnológicas.
+                    Poseo certificación de Google en Cybersecurity (2024) y conocimientos en Python,
+                    SQL y bases de datos. Me destaco por ser creativa, trabajar bien en equipo
+                    y ser eficiente.
+                </p>
+            </div>
+        </header>
 
-        <div id="superior_derecho">
-            <h1>AMANDA ANGÉLICA ÁLVAREZ ÁLVAREZ</h1>
+        <!-- Contenido -->
+        <main id="contenedor_principal" class="banner_superior" aria-label="Contenido principal del currículum">
 
-            <p class="presentacion">
-                Estudiante de Ingeniería en Ciberseguridad en INACAP Temuco (2° año),
-                con orientación a la seguridad informática y desarrollo de soluciones tecnológicas.
-                Poseo certificación de Google en Cybersecurity (2024) y conocimientos en Python,
-                SQL y bases de datos. Me destaco por ser creativa, trabajar bien en equipo
-                y ser eficiente.
-            </p>
-        </div>
+            <!-- Izquierda -->
+            <aside id="principal_izquierda" aria-label="Información complementaria">
+
+                <section class="acordeon">
+                    <button
+                        class="acordeon_btn"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="panel-habilidades"
+                        id="btn-habilidades"
+                    >
+                        Habilidades Blandas <span class="flecha" aria-hidden="true">▲</span>
+                    </button>
+                    <div class="acordeon_contenido" id="panel-habilidades" role="region" aria-labelledby="btn-habilidades" hidden>
+                        <ul>
+                            <li>Creatividad y diseño</li>
+                            <li>Trabajo en equipo</li>
+                            <li>Resolución de problemas</li>
+                            <li>Adaptabilidad</li>
+                            <li>Respeto y empatía</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="acordeon">
+                    <button
+                        class="acordeon_btn"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="panel-cursos"
+                        id="btn-cursos"
+                    >
+                        Cursos <span class="flecha" aria-hidden="true">▲</span>
+                    </button>
+                    <div class="acordeon_contenido" id="panel-cursos" role="region" aria-labelledby="btn-cursos" hidden>
+                        <ul>
+                            <li>Foundations of Cybersecurity</li>
+                            <li>Play It Safe: Manage Security Risks</li>
+                            <li>Connect and Protect: Networks and Network Security</li>
+                            <li>Tools of the Trade: Linux and SQL</li>
+                            <li>Assets, Threats, and Vulnerabilities</li>
+                            <li>Sound the Alarm: Detection and Response</li>
+                            <li>Automate Cybersecurity Tasks with Python</li>
+                            <li>Put It to Work: Prepare for Cybersecurity Jobs</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="acordeon">
+                    <button
+                        class="acordeon_btn"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="panel-certificados"
+                        id="btn-certificados"
+                    >
+                        Certificados <span class="flecha" aria-hidden="true">▲</span>
+                    </button>
+                    <div class="acordeon_contenido" id="panel-certificados" role="region" aria-labelledby="btn-certificados" hidden>
+                        <ul>
+                            <li><a href="assets/certificados/google.pdf" target="_blank" rel="noopener noreferrer">📄 Google Cybersecurity (2024)</a></li>
+                            <li><a href="assets/certificados/coreano.pdf" target="_blank" rel="noopener noreferrer">📄 Coreano A1 (2023)</a></li>
+                            <li><a href="assets/certificados/desarrollo.pdf" target="_blank" rel="noopener noreferrer">📄 Desarrollo de Aplicaciones (2025)</a></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="acordeon">
+                    <button
+                        class="acordeon_btn"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="panel-idiomas"
+                        id="btn-idiomas"
+                    >
+                        Idiomas <span class="flecha" aria-hidden="true">▲</span>
+                    </button>
+                    <div class="acordeon_contenido" id="panel-idiomas" role="region" aria-labelledby="btn-idiomas" hidden>
+                        <ul>
+                            <li>Español: Nativo</li>
+                            <li>Inglés: Intermedio</li>
+                            <li>Coreano: Básico</li>
+                        </ul>
+                    </div>
+                </section>
+
+            </aside>
+
+            <!-- DERECHA -->
+            <section id="principal_derecha" aria-label="Antecedentes académicos y laborales">
+                <h2>Antecedentes Académicos</h2>
+
+                <p><strong>INACAP Temuco</strong><br>
+                Ingeniería en Ciberseguridad (2025 - Presente)</p>
+
+                <p><strong>Educación Media</strong><br>
+                Egresada en 2021 - Colegio MTA Temuco</p>
+
+                <h2>Antecedentes Laborales</h2>
+
+                <p>Sin experiencia laboral formal.</p>
+            </section>
+
+        </main>
+
+        <!-- PIE -->
+        <footer id="pie_pagina" aria-label="Datos de contacto">
+            <div class="div_pie_pagina">📞 <a href="tel:+56930665381">+56 9 3066 5381</a></div>
+            <div class="div_pie_pagina">📧 <a href="mailto:amanda.alvarez02@inacapmail.cl">amanda.alvarez02@inacapmail.cl</a></div>
+            <div class="div_pie_pagina">💻 <a href="https://github.com/AmandaAZ04" target="_blank" rel="noopener noreferrer">github.com/AmandaAZ04</a></div>
+        </footer>
 
     </div>
 
-    <!-- Contenido -->
-    <div id="contenedor_principal" class="banner_superior">
+    <script>
+        const botones = document.querySelectorAll(".acordeon_btn");
 
-        <!-- Izquierda -->
-        <div id="principal_izquierda">
+        botones.forEach((boton) => {
+            boton.addEventListener("click", () => {
+                const contenido = boton.nextElementSibling;
+                const flecha = boton.querySelector(".flecha");
+                const expandido = boton.getAttribute("aria-expanded") === "true";
 
-            <div class="acordeon">
-                <button class="acordeon_btn">Habilidades Blandas <span class="flecha">▲</span></button>
-                <div class="acordeon_contenido">
-                    <ul>
-                        <li>Creatividad y diseño</li>
-                        <li>Trabajo en equipo</li>
-                        <li>Resolución de problemas</li>
-                        <li>Adaptabilidad</li>
-                        <li>Respeto y empatía</li>
-                    </ul>
-                </div>
-            </div>
+                boton.setAttribute("aria-expanded", String(!expandido));
 
-            <div class="acordeon">
-                <button class="acordeon_btn">Cursos <span class="flecha">▲</span></button>
-                <div class="acordeon_contenido">
-                    <ul>
-                        <li>Foundations of Cybersecurity</li>
-                        <li>Play It Safe: Manage Security Risks</li>
-                        <li>Connect and Protect: Networks and Network Security</li>
-                        <li>Tools of the Trade: Linux and SQL</li>
-                        <li>Assets, Threats, and Vulnerabilities</li>
-                        <li>Sound the Alarm: Detection and Response</li>
-                        <li>Automate Cybersecurity Tasks with Python</li>
-                        <li>Put It to Work: Prepare for Cybersecurity Jobs</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="acordeon">
-                <button class="acordeon_btn">Certificados <span class="flecha">▲</span></button>
-                <div class="acordeon_contenido">
-                    <ul>
-                        <li><a href="assets/certificados/google.pdf" target="_blank">📄 Google Cybersecurity (2024)</a></li>
-                        <li><a href="assets/certificados/coreano.pdf" target="_blank">📄 Coreano A1 (2023)</a></li>
-                        <li><a href="assets/certificados/desarrollo.pdf" target="_blank">📄 Desarrollo de Aplicaciones (2025)</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="acordeon">
-                <button class="acordeon_btn">Idiomas <span class="flecha">▲</span></button>
-                <div class="acordeon_contenido">
-                    <ul>
-                        <li>Español: Nativo</li>
-                        <li>Inglés: Intermedio</li>
-                        <li>Coreano: Básico</li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- DERECHA -->
-        <div id="principal_derecha">
-
-            <h2>Antecedentes Académicos</h2>
-
-            <p><strong>INACAP Temuco</strong><br>
-            Ingeniería en Ciberseguridad (2025 - Actual)</p>
-
-            <p><strong>Educación Media</strong><br>
-            Egresada 2021 - Colegio MTA Temuco</p>
-
-            <h2>Antecedentes Laborales</h2>
-
-            <p>Sin experiencia laboral formal.</p>
-
-        </div>
-
-    </div>
-
-    <!-- PIE -->
-    <div id="pie_pagina">
-        <div class="div_pie_pagina">📞 +56930665381</div>
-        <div class="div_pie_pagina">📧 amanda.alvarez02@inacapmail.cl</div>
-        <div class="div_pie_pagina">💻 Github: AmandaAZ04</div>
-    </div>
-
-</div>
-
-<script>
-    const botones = document.querySelectorAll(".acordeon_btn");
-
-    botones.forEach(boton => {
-        boton.addEventListener("click", () => {
-            const contenido = boton.nextElementSibling;
-            const flecha = boton.querySelector(".flecha");
-
-            if (contenido.style.maxHeight) {
-                contenido.style.maxHeight = null;
-                contenido.classList.remove("activo");
-                flecha.textContent = "▲";
-            } else {
-                contenido.style.maxHeight = contenido.scrollHeight + "px";
-                contenido.classList.add("activo");
-                flecha.textContent = "▼";
-            }
+                if (expandido) {
+                    contenido.style.maxHeight = null;
+                    contenido.classList.remove("activo");
+                    contenido.hidden = true;
+                    flecha.textContent = "▲";
+                } else {
+                    contenido.hidden = false;
+                    contenido.classList.add("activo");
+                    contenido.style.maxHeight = contenido.scrollHeight + "px";
+                    flecha.textContent = "▼";
+                }
+            });
         });
-    });
-</script>
-
+    </script>
 </body>
 </html>

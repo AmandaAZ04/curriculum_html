@@ -6,8 +6,7 @@ body {
 
 /* CONTENEDOR */
 #pagina_completa {
-    width: 95%;
-    max-width: 1400px;
+    width: min(95%, 1400px);
     margin: 20px auto;
 }
 
@@ -19,7 +18,7 @@ body {
     border-radius: 15px;
     margin-bottom: 20px;
     border: 2px solid #e5989b;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* ENCABEZADO */
@@ -34,6 +33,7 @@ body {
     width: 210px;
     height: 210px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 #superior_derecho {
@@ -47,7 +47,6 @@ body {
 
 /* CONTENIDO */
 #contenedor_principal {
-    display: flex;
     align-items: stretch;
     min-height: 500px;
 }
@@ -69,16 +68,23 @@ body {
 /* PIE */
 #pie_pagina {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     justify-content: space-around;
     background-color: #ffccd5;
     border-radius: 15px;
     padding: 10px;
 }
 
+.div_pie_pagina {
+    text-align: center;
+}
+
 /* TÍTULOS */
 h1 {
     font-weight: 800;
     color: #b56576;
+    margin-top: 10px;
 }
 
 h2 {
@@ -92,7 +98,8 @@ h2 {
 }
 
 /* TEXTO */
-p, li {
+p,
+li {
     font-weight: 600;
 }
 
@@ -153,6 +160,11 @@ a:hover {
     color: white;
 }
 
+.acordeon_btn:focus-visible {
+    outline: 3px solid #b56576;
+    outline-offset: 2px;
+}
+
 .acordeon_contenido {
     max-height: 0;
     overflow: hidden;
@@ -169,4 +181,51 @@ a:hover {
 
 .flecha {
     font-size: 18px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .banner_superior {
+        flex-direction: column;
+    }
+
+    #superior_izquierdo {
+        padding-top: 20px;
+    }
+
+    #principal_izquierda,
+    #principal_derecha {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #principal_izquierda {
+        border-right: none;
+        border-bottom: 2px solid #e5989b;
+    }
+}
+
+@media (max-width: 520px) {
+    #imagen_superior {
+        width: 170px;
+        height: 170px;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .presentacion {
+        font-size: 16px;
+    }
+
+    .acordeon_btn {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    #principal_derecha {
+        padding: 20px;
+    }
 }
